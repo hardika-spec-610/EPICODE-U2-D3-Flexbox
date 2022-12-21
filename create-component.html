@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXTRA — Recreate this component with flexbox</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Outfit", sans-serif;
+        height: 100vh;
+        color: white;
+        font-weight: 500;
+        width: 900px;
+        margin-inline: auto;
+      }
+      .main-wrapper {
+        height: 400px;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+      }
+      .left-clm-content {
+        background-color: #88b46f;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        max-width: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .right-cim-content {
+        max-width: 50%;
+        width: 100%;
+        display: flex;
+      }
+      .blue-block {
+        background-color: #699afc;
+        max-width: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      .yellow-clm-block {
+        max-width: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .block1 {
+        background-color: #fbf7c0;
+        border-top-right-radius: 12px;
+        text-align: center;
+        height: 33.33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+      }
+      .block2 {
+        background-color: #f7ed73;
+        height: 33.33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+      }
+      .block3 {
+        background-color: #f4e43e;
+        height: 33.33%;
+        border-bottom-right-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="left-clm-content">Centered text</div>
+      <div class="right-cim-content">
+        <div class="blue-block">Bottom text</div>
+        <div class="yellow-clm-block">
+          <div class="block1">Third Column Part 1</div>
+          <div class="block2">Third Column Part 1</div>
+          <div class="block3">Third Column Part 1</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
