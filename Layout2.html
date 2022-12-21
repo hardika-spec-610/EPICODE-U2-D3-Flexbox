@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 2</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Outfit", sans-serif;
+        height: 100vh;
+        color: white;
+        font-weight: 500;
+        display: flex;
+      }
+      nav {
+        width: 15%;
+        background-color: #c22177;
+        padding-top: 1em;
+        padding-left: 1em;
+      }
+      .main-right-content {
+        width: 85%;
+      }
+      header {
+        background-color: black;
+        padding-top: 1em;
+        padding-left: 1em;
+        height: 10%;
+      }
+      .main-content {
+        display: flex;
+        height: 80%;
+      }
+      article {
+        flex-grow: 3;
+        color: black;
+        padding-top: 1em;
+        padding-left: 1em;
+      }
+      aside {
+        background-color: #320388;
+        flex-grow: 1;
+        padding-top: 1em;
+        padding-left: 1em;
+      }
+      footer {
+        background-color: black;
+        padding-top: 1em;
+        padding-left: 1em;
+        height: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <div class="main-right-content">
+      <header>Header</header>
+      <div class="main-content">
+        <article>Article</article>
+        <aside>Aside</aside>
+      </div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
