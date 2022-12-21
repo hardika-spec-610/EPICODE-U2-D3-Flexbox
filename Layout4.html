@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 2</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Outfit", sans-serif;
+        height: 100vh;
+        color: white;
+        font-weight: 500;
+      }
+
+      header {
+        background-color: black;
+        padding-top: 1em;
+        padding-left: 1em;
+        height: 10%;
+      }
+      .main-content {
+        display: flex;
+
+        height: 90%;
+      }
+      .nav-content {
+        max-width: 20%;
+        width: 100%;
+      }
+      .right-article-content {
+        max-width: 80%;
+        width: 100%;
+        display: flex;
+      }
+      nav {
+        width: 100%;
+        height: 100%;
+        background-color: #c22177;
+        padding-top: 1em;
+        padding-left: 1em;
+      }
+      article {
+        max-width: 75%;
+        width: 100%;
+        color: black;
+        padding-top: 1em;
+        padding-left: 1em;
+      }
+      aside {
+        max-width: 25%;
+        width: 100%;
+        background-color: #320388;
+        padding-top: 1em;
+        padding-left: 1em;
+      }
+      footer {
+        background-color: black;
+        padding-top: 1em;
+        padding-left: 1em;
+        height: 10%;
+      }
+      /* 320px — 480px: Mobile devices.
+            481px — 768px: iPads, Tablets.
+            769px — 1024px: Small screens, laptops.
+            1025px — 1200px: Desktops, large screens.
+            1201px and more — Extra large screens, TV. */
+
+      @media only screen and (max-width: 768px) {
+        .main-content {
+          flex-direction: column;
+        }
+        .nav-content {
+          max-width: 100%;
+        }
+        .right-article-content {
+          max-width: 100%;
+          height: 100%;
+        }
+        nav {
+          max-width: 100%;
+          padding-bottom: 1em;
+        }
+        article {
+          max-width: 80%;
+        }
+        aside {
+          max-width: 20%;
+        }
+      }
+      @media only screen and (max-width: 480px) {
+        .right-article-content {
+          flex-wrap: wrap;
+        }
+        article {
+          max-width: 100%;
+          height: 80%;
+        }
+        aside {
+          max-width: 100%;
+        }
+      }
+      /* @media only screen and (min-width: 768px) and (max-width: 959px) {
+      } */
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <div class="main-content">
+      <div class="nav-content"><nav>Nav</nav></div>
+      <div class="right-article-content">
+        <article>Article</article>
+        <aside>Aside</aside>
+      </div>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>
